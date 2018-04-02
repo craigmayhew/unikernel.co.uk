@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Unikernel</title>
+        <script src="//use.fontawesome.com/cefa967eb5.js"></script>
+        <script src="js.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    </head>
+    <body>
+      <nav>
+        <div class="nav-wrapper">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/">Unikernel</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+<pre>
+  A unikernel is an application image with the bare minimum drivers required to it's job.
+  Crucially it's barely running an OS. These images are tiny, on the order of MBs and boot
+  in ~200ms.
+
+  A list of unikernel charactistics:
+
+  - Single user
+  - Single address space
+  - Single process
+
+  Security:
+  - Unikernels are considered more secure as they use the bare minimum to get a job done.
+  - This gives them the smallest possible attack surface due to minimal code.
+  - Least privilege, or a better name "least possible";
+      If the unikernel doesn't have drivers to write to the disk, then guess what, the attacked
+      can't write to disk even if the unikernel is compromised.
+
+  Further reading:
+  - LVM
+  - Clean slate
+      (HalVM, LING, MirageOS)
+  - Legacy
+      (ClickOS, Clive, Graphene, HermitCore, IncludeOS, Magnios, OSv, Rumprun,
+      RuntimeJS, Ultibo, Vorteil)
+  - Compiling a DNS unikernel: <a href="https://www.youtube.com/watch?v=24rvIB4_v4U?t=16m30s">youtube</a>
+  - Wikipedia entry for <a href="https://en.wikipedia.org/wiki/Unikernel">Unikernel</a>
+</pre>
+      </main>
+       <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://en.wikipedia.org/wiki/Unikernel">https://en.wikipedia.org/wiki/Unikernel</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+    </body>
+</html>
